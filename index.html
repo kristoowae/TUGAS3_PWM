@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Menyatakan bahwa ini adalah dokumen HTML5 -->
+<html lang="id">
+    <!-- Elemen root HTML yang mengatur bahasa halaman ini ke bahasa Indonesia -->
+    <head>
+        <meta charset="UTF-8">
+        <!-- Menetapkan karakter encoding ke UTF-8, mendukung berbagai karakter termasuk bahasa non-latin -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mengatur viewport untuk mendukung tampilan responsif di perangkat mobile -->
+        <title>Portofolio Saya</title>
+        <!-- Menentukan judul halaman yang akan tampil di tab browser -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Memasukkan file CSS Bootstrap versi 5.3 dari CDN (Content Delivery Network) untuk styling otomatis -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Memasukkan file CSS lokal "style.css" untuk custom styling halaman -->
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <!-- Mulai bagian body dari halaman web -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!-- Membuat navbar dengan kelas Bootstrap navbar-dark untuk warna teks terang dan bg-dark untuk latar belakang gelap -->
+            <div class="container">
+                <!-- Container Bootstrap untuk menyusun layout dengan padding otomatis -->
+                <a class="navbar-brand" href="#">Portofolio</a>
+                <!-- Membuat logo atau nama di navbar yang berfungsi sebagai tautan kembali ke halaman utama (href="#") -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <!-- Tombol toggle navbar yang akan muncul di tampilan kecil (mobile) -->
+                    <span class="navbar-toggler-icon"></span>
+                    <!-- Icon hamburger menu yang tampil saat navbar dalam keadaan collapse (tersembunyi di mobile) -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Bagian ini akan melipat (collapse) dan menampilkan menu navigasi di tampilan kecil -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Daftar navigasi yang rata kanan menggunakan kelas "ms-auto" -->
+                        <li class="nav-item"><a class="nav-link"
+                                href="#beranda">Beranda</a></li>
+                        <!-- Item menu yang mengarah ke bagian #beranda -->
+                        <li class="nav-item"><a class="nav-link"
+                                href="#tentang">Tentang</a></li>
+                        <!-- Item menu yang mengarah ke bagian #tentang -->
+                        <li class="nav-item"><a class="nav-link"
+                                href="#projek">Projek</a></li>
+                        <!-- Item menu yang mengarah ke bagian #projek -->
+                        <li class="nav-item"><a class="nav-link"
+                                href="kontak.html">Kontak</a></li>
+                        <!-- Item menu yang mengarah ke bagian #kontak -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Beranda -->
+        <section id="beranda" class="pt-5 mt-5 text-center">
+            <!-- Bagian Beranda dimulai dengan id="beranda" dan menambahkan padding dan margin top agar tidak menempel navbar -->
+            <div class="container">
+                <!-- Container untuk mengatur lebar konten -->
+                <img src="img/profile.jpg" class="profile-img mb-3" width="150"
+                    alt="Foto Profil">
+                <!-- Menampilkan gambar profil dengan ukuran 150px dan kelas profile-img (untuk styling), mb-3 untuk margin bawah -->
+                <h1>Halo, Saya Nama Kristo</h1>
+                <!-- Menampilkan nama atau sapaan -->
+                <p class="lead">Audioman</p>
+                <!-- Menampilkan deskripsi singkat dengan kelas lead untuk teks yang lebih besar dan tebal -->
+            </div>
+        </section>
+
+        <!-- Tentang -->
+        <section id="tentang" class="mt-5 pt-5">
+            <!-- Bagian Tentang dimulai dengan id="tentang" dan margin atas dan padding atas untuk jarak dari elemen sebelumnya -->
+            <div class="container">
+                <!-- Container untuk konten -->
+                <h2 class="text-center mb-4">Tentang Saya</h2>
+                <!-- Judul bagian dengan kelas text-center untuk teks yang di tengah dan mb-4 untuk margin bawah -->
+                <p>
+                    Saya adalah seorang audioman dengan keahlian di dua dunia
+                    suara: produksi film dan panggung live. Dengan pengalaman
+                    menangani rekaman suara on-location hingga mixing live untuk
+                    pertunjukan besar, saya menggabungkan ketepatan teknis
+                    dengan kepekaan artistik. Tujuan saya adalah menghadirkan
+                    suara yang jernih, emosional, dan kuat, baik untuk layar
+                    lebar maupun panggung nyata.
+                </p>
+                <!-- Paragraf yang menjelaskan tentang diri Anda sebagai audioman -->
+                <p>
+                    Saya juga terbiasa bekerja dengan menggunakan product dari
+                    Zoom untuk audi recorder film dan Yamaha, Midas, dan
+                    Behringer untuk Mixer.
+                </p>
+                <!-- Paragraf lain yang menambahkan informasi lebih lanjut -->
+            </div>
+        </section>
+
+        <!-- Projek -->
+        <section id="projek" class="mt-5 pt-5">
+            <!-- Bagian Projek dimulai dengan id="projek", margin atas dan padding atas untuk jarak elemen sebelumnya -->
+            <div class="container">
+                <!-- Container untuk menata konten -->
+                <h2 class="text-center mb-4">Projek Saya</h2>
+                <!-- Judul bagian Projek dengan kelas text-center untuk penataan teks tengah -->
+                <div class="row">
+                    <!-- Row untuk mengatur kolom-kolom di dalamnya -->
+                    <div class="col-md-4">
+                        <!-- Kolom dengan ukuran 4 di layar medium (tablet) ke atas -->
+                        <div class="card mb-4">
+                            <!-- Kartu Bootstrap untuk menampilkan konten projek -->
+                            <img src="img/project1.jpg" class="card-img-top"
+                                alt="Projek 1">
+                            <!-- Gambar projek di dalam kartu -->
+                            <div class="card-body">
+                                <!-- Isi kartu -->
+                                <h5 class="card-title">Syutingan</h5>
+                                <!-- Judul projek -->
+                                <p class="card-text">Project Tugas Akhir
+                                    Mahasiswa MMTC dengan mengangkat tema The
+                                    Night Mechanic.</p>
+                                <!-- Deskripsi singkat projek -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Kolom kedua dengan ukuran 4 -->
+                        <div class="card mb-4">
+                            <img src="img/project2.jpg" class="card-img-top"
+                                alt="Projek 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Live Streaming</h5>
+                                <p class="card-text">Project disebuah komunitas
+                                    untuk live streaming, dan menjadi soundman
+                                    di acara tersebut dengan menggunakan Mixer
+                                    Digital
+                                    MR18.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Kolom ketiga dengan ukuran 4 -->
+                        <div class="card mb-4">
+                            <img src="img/project3.jpg" class="card-img-top"
+                                alt="Projek 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Theater</h5>
+                                <p class="card-text">Terlibat dalam vendor
+                                    menjadi soundman dalam acara theater, dengan
+                                    menggunakan Mixer M32 Live.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <body>
+            <!-- Footer -->
+            <footer class="text-white text-center py-3">
+                <!-- Footer dengan teks putih, rata tengah, dan padding vertikal -->
+                &copy; 2025 Kristo. Portofolio dibuat dengan Bootstrap + CSS3.
+                <!-- Copyright dengan tahun dan nama Anda -->
+            </footer>
+
+            <!-- Bootstrap JS -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Menambahkan JavaScript untuk interaktivitas seperti navbar dropdown dan modal -->
+        </body>
+    </html>
